@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title></title>
+</head>
+
+<body>
+  <h3 id="header" class="m-4"></h1>
+  <div class="d-flex container m-1">
+  <div class="flex-fill">
+    <div id="events" class="row"></div>
+    <div id="eventcreator" class="w-75">
+      <label for="eventname">Event Name</label>
+      <div class="input-group mb-1">
+        <input type="text" id="eventname" class="form-control">
+        <button class="btn btn-danger" id="clearname">X</button>
+      </div>
+      <label for="aboutevent">About this event</label>
+      <div class="input-group mt-1 mb-1">
+        <input type="text" id="aboutevent" class="form-control">
+        <button class="btn btn-danger" id="clearabout">X</button>
+      </div>
+      <label for="time">Time for event</label>
+      <div class="input-group mb-1 mt-1">
+        <input type="time" id="time" class="form-control">
+        <button class="btn btn-danger" id="cleartime">X</button>
+      </div>
+      <label for="colorpicker">Color for event</label>
+      <select name="" id="colorpicker" class="form-select mt-1 mb-1">
+        <option value="secondary" selected>Gray</option>
+        <option value="success">Green</option>
+        <option value="primary">Blue</option>
+        <option value="danger">Red</option>
+        <option value="info">Turquoise</option>
+        <option value="warning">Yellow</option>
+      </select>
+    </div>
+    <button id="schedule" class="btn btn-info mt-1">Schedule event</button>
+    <button id="back" class="btn btn-info mt-1">Return</button>
+  </div>
+  <div id="menu" class="text-end">
+    <button class="btn btn-info mb-1" id="gameschedule">Schedule a game</button>
+    <br>
+    <button class="btn btn-info mt-1 mb-1" id="appointschedule">Schedule an appointment</button>
+    <br>
+    <button class="btn btn-info mt-1 mb-1" id="classschedule">Schedule a class</button>
+  </div>
+  </div>    
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="day.js"></script>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
